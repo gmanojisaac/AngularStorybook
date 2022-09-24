@@ -22,7 +22,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-eab8ae28699d57bb2f0092869ec908b776aebb170bcf350de2eadbbeafb6a20f65b8f3d0c8498a5d77ecfc9396d2b98c30b336e18b0468dbb6a8ea45e94c9d37",
+            "id": "component-AppComponent-d30a2821cb3bdc7306d8c63387de3e58a3de1ac6180876c2bc975adb8c7beedf206c73646bf7d86db2a66565b12d6465f63eadbdeff8a067939fc72989b048b4",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -49,16 +49,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.css']\r\n})\r\nexport class AppComponent {\r\n}\r\n\r\n\r\n/*\r\nCopyright Google LLC. All Rights Reserved.\r\nUse of this source code is governed by an MIT-style license that\r\ncan be found in the LICENSE file at https://angular.io/license\r\n*/",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n}\n\n\n/*\nCopyright Google LLC. All Rights Reserved.\nUse of this source code is governed by an MIT-style license that\ncan be found in the LICENSE file at https://angular.io/license\n*/",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "\r\n\r\n\r\n/*\r\nCopyright Google LLC. All Rights Reserved.\r\nUse of this source code is governed by an MIT-style license that\r\ncan be found in the LICENSE file at https://angular.io/license\r\n*/",
+                    "data": "\n\n\n/*\nCopyright Google LLC. All Rights Reserved.\nUse of this source code is governed by an MIT-style license that\ncan be found in the LICENSE file at https://angular.io/license\n*/",
                     "styleUrl": "./app.component.css"
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-storybookdesign></app-storybookdesign>\r\n\r\n<!-- \r\nCopyright Google LLC. All Rights Reserved.\r\nUse of this source code is governed by an MIT-style license that\r\ncan be found in the LICENSE file at https://angular.io/license\r\n-->"
+            "templateData": "<app-storybookdesign></app-storybookdesign>\n\n<!-- \nCopyright Google LLC. All Rights Reserved.\nUse of this source code is governed by an MIT-style license that\ncan be found in the LICENSE file at https://angular.io/license\n-->"
         },
         {
             "name": "ButtonComponent",
@@ -339,7 +339,7 @@
         },
         {
             "name": "StorybookdesignComponent",
-            "id": "component-StorybookdesignComponent-52695da0965ae5f4960fac91e8e782406f85af8bcf751c9a8067defc8017fca2204e5a2da901de9ff6a164b5bc87ef328f7d88119ca118c431d1f5f9d849f4f4",
+            "id": "component-StorybookdesignComponent-c8f6a28d008bfd4e4bce599a346621018afd66be0594bba7f9a7a8cfb881bb18040592c2e2c7292cb967a7dad9441caca9b8a7efd043a08dfc7350d16a3b4f15",
             "file": "src/app/storybookdesign/storybookdesign.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -478,11 +478,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-storybookdesign',\n  templateUrl: './storybookdesign.component.html',\n  styleUrls: ['./storybookdesign.component.css']\n})\nexport class StorybookdesignComponent implements OnInit, AfterContentInit {\n  @ViewChild('greet', { static: true })\n  greet!: TemplateRef<any>;\n  @ViewChild('svk', { static: true })\n  svk!: TemplateRef<any>;\n  @ViewChild('eng', { static: true })\n  eng!: TemplateRef<any>;\n  @ViewChild('storydesign', { static: true })\n  storydesign!: TemplateRef<any>;\n\n  myContext = { $implicit: 'World', localSk: 'Svet' };\n  tems: TemplateRef<any> = this.greet;\n\n\n  @Input()\n  myselectedtemp: string = 'greet';\n\n\n  ngAfterContentInit() {\n\n    switch (this.myselectedtemp) {\n      case 'greet':\n        this.tems = this.greet;\n        break;\n      case 'svk':\n        this.tems = this.svk;\n        break;\n      case 'eng':\n        this.tems = this.eng;\n        break;\n      case 'storydesign':\n        this.tems = this.storydesign;\n        break;\n\n    }\n  }\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n\n\n}\n",
+            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-storybookdesign',\n  templateUrl: './storybookdesign.component.html',\n  styleUrls: ['./storybookdesign.component.css']\n})\nexport class StorybookdesignComponent implements OnInit, AfterContentInit {\n  @ViewChild('greet', { static: true })\n  greet!: TemplateRef<any>;\n  @ViewChild('svk', { static: true })\n  svk!: TemplateRef<any>;\n  @ViewChild('eng', { static: true })\n  eng!: TemplateRef<any>;\n  @ViewChild('storydesign', { static: true })\n  storydesign!: TemplateRef<any>;\n\n  myContext = { $implicit: 'World', localSk: 'Svet' };\n  tems: TemplateRef<any> = this.greet;\n\n\n  @Input()\n  myselectedtemp: string = 'greet';\n\n\n  ngAfterContentInit() {\n\n    switch (this.myselectedtemp) {\n      case 'greet':\n        this.tems = this.greet;\n        break;\n      case 'svk':\n        this.tems = this.svk;\n        break;\n      case 'eng':\n        this.tems = this.eng;\n        break;\n      case 'storydesign':\n        this.tems = this.storydesign;\n        break;\n\n    }\n  }\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "\r\n",
+                    "data": "\n",
                     "styleUrl": "./storybookdesign.component.css"
                 }
             ],
@@ -499,19 +499,19 @@
                 "OnInit",
                 "AfterContentInit"
             ],
-            "templateData": "<ng-template #storydesign >\n<h1>\n    Hello\n</h1>>\n</ng-template>\n\n<ng-template #greet let-person><span>Hello {{person}} </span></ng-template>\n<ng-template #eng let-name><span>Hello {{name}}!</span></ng-template>\n<ng-template #svk let-person=\"localSk\" ><span>Ahoj {{person}}!</span></ng-template>\n\n\n<ng-container \n[ngTemplateOutlet]=\"tems\"\n[ngTemplateOutletContext]=\"myContext\"> "
+            "templateData": "<ng-template #storydesign >\n<h1>\n    Working\n</h1>>\n</ng-template>\n\n<ng-template #greet let-person><span>Hello {{person}} </span></ng-template>\n<ng-template #eng let-name><span>Hello {{name}}!</span></ng-template>\n<ng-template #svk let-person=\"localSk\" ><span>Ahoj {{person}}!</span></ng-template>\n\n\n<ng-container \n[ngTemplateOutlet]=\"tems\"\n[ngTemplateOutletContext]=\"myContext\"> "
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-c26de5c19d13929f5331b15a3b801564795b2fa5a6b8772649832fc6deab2b32dd1b8bbd60507393844c5c5a428133bc7333d55764f741c0bb1b61f4fa9528a8",
+            "id": "module-AppModule-d9957b48273920ad4045f2b0477c0dbddc1e42b62804e674a26a331cc9c7e6e284ac456c560929bf70017a932742734b6bbde5d118c63c8d1e0f41c944c9b318",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { RouterModule } from '@angular/router';\r\n\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { StorybookdesignComponent } from './storybookdesign/storybookdesign.component';\r\nimport { AppSharedModule } from './app-shared/app-shared.module';\r\n\r\n@NgModule({\r\n  imports: [\r\n    AppSharedModule,\r\n    BrowserModule,\r\n    RouterModule.forRoot([\r\n      { path: '', component: AppComponent },\r\n    ])\r\n  ],\r\n  declarations: [\r\n    AppComponent,\r\n    StorybookdesignComponent\r\n  ],\r\n  bootstrap: [\r\n    AppComponent\r\n  ]\r\n})\r\nexport class AppModule { }\r\n\r\n\r\n/*\r\nCopyright Google LLC. All Rights Reserved.\r\nUse of this source code is governed by an MIT-style license that\r\ncan be found in the LICENSE file at https://angular.io/license\r\n*/",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { RouterModule } from '@angular/router';\n\n\nimport { AppComponent } from './app.component';\nimport { StorybookdesignComponent } from './storybookdesign/storybookdesign.component';\nimport { AppSharedModule } from './app-shared/app-shared.module';\n\n@NgModule({\n  imports: [\n    AppSharedModule,\n    BrowserModule,\n    RouterModule.forRoot([\n      { path: '', component: AppComponent },\n    ])\n  ],\n  declarations: [\n    AppComponent,\n    StorybookdesignComponent\n  ],\n  bootstrap: [\n    AppComponent\n  ]\n})\nexport class AppModule { }\n\n\n/*\nCopyright Google LLC. All Rights Reserved.\nUse of this source code is governed by an MIT-style license that\ncan be found in the LICENSE file at https://angular.io/license\n*/",
             "children": [
                 {
                     "type": "providers",
@@ -611,7 +611,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  production: true\r\n}"
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "environment",
@@ -621,7 +621,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  production: false\r\n}"
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "Large",
@@ -777,7 +777,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\r\n  production: true\r\n}"
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/environments/environment.ts": [
@@ -789,7 +789,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\r\n  production: false\r\n}"
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
