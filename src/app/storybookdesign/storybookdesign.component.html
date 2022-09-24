@@ -1,0 +1,14 @@
+<ng-template #storydesign >
+<h1>
+    Working
+</h1>>
+</ng-template>
+
+<ng-template #greet let-person><span>Hello {{person}} </span></ng-template>
+<ng-template #eng let-name><span>Hello {{name}}!</span></ng-template>
+<ng-template #svk let-person="localSk" ><span>Ahoj {{person}}!</span></ng-template>
+
+
+<ng-container 
+[ngTemplateOutlet]="tems"
+[ngTemplateOutletContext]="myContext"> 
